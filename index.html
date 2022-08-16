@@ -7,26 +7,47 @@
     <title>hilel_Home-work_19_1</title>
 
     <script defer src = "js/main.js"></script>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/css/bootstrap-slider.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-    
-      <input id="num1" />
 
-	<div id="operator_btns">
-	  <button id="plus" onclick="a='+'">+</button>
-	  <button id="minus" onclick="a='-'">-</button>
-	  <button id="times" onclick="a='*'">x</button>
-	  <button id="divide" onclick="a='/'">:</button>
-	</div>
+    <!--<input id="num1"/>
 
-	<input id="num2" />
-	<br>
+    <div id="operator_btns">
+      <button id="plus" onclick="a='+'">+</button>
+      <button id="minus" onclick="a='-'">-</button>
+      <button id="times" onclick="a='*'">x</button>
+      <button id="divide" onclick="a='/'">:</button>
+    </div>
 
-	<button onclick="x()">Результат</button>
+    <input id="num2"/>
+    <br>
 
-	<p id="result"></p>
+    <button onclick="x()">Результат</button>
 
-    <!-- <script src="js/main.js"></script> -->
+    <p id="result"></p> -->
+    <div class="wrapper">
+      <h1 class="wrapper__title">javascript slider calculator</h1>
+      <form class="calculator">
+        <div class="calculator__row">
+          <label for="bill">enter the bill amount for your meal: $</label>
+          <input type="text" id="bill" class="calculator__bill" value="5" required/>
+        </div>
+        <div class="calculator__row">
+          <label for="tip">tip amount: <span class="tip-amount"></span></label>
+          <input type="range" min="0" max="100" value="0" step="1" class="calculator__tip" id="tip" required/>
+        </div>
+        <div class="calculator__row">
+          <h2 class="calculator__info">tip to leave: <span class="calculator__result"></span></h2>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/bootstrap-slider.js"></script>
+
+ <script src="js/main.js"></script> 
